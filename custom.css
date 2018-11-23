@@ -1,0 +1,217 @@
+html {
+  background-image: url('background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height:100%;
+}
+
+.container{
+  margin: 50px auto;
+  max-width: 100%;
+  position: absolute;
+}
+
+.chessbox{
+  background-color: white;
+  margin: auto;
+  max-width: 800px;
+  max-height: 850px;
+  padding: 25px 0 100px 0;
+  position: relative;
+  border-radius: 50px;
+  border: 5px solid #1d8673;
+}
+
+.boxnull{
+  border: 5px solid #940202 !important;
+}
+
+#namebox{
+  text-align: center;
+  margin: 20px;
+  font-family: 'Black Han Sans', cursive;
+  color: #096756;
+}
+
+.title{
+  font-size: 50px;
+  font-family: 'Monoton', cursive;
+}
+
+.form-control{
+  max-width: 500px;
+  background-color: rgba(100, 221, 69, 0.5);
+  border: 3px solid #1d8673;
+  color: #096756;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 20px auto;
+  text-transform: uppercase;
+}
+
+.form-control:focus{
+  background-color: rgba(100, 221, 69, 0.5);
+  color: #096756;
+}
+
+.confirmation{
+  text-align: center;
+  margin: auto;
+  font-family: 'Black Han Sans', cursive;
+  margin-bottom: 20px;
+}
+
+.confirmation>p {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 0;
+  color: #096756;
+}
+
+#resultbox{
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 600px;
+  margin: auto;
+}
+
+.ketnull {
+  color: #940202;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Black Han Sans', cursive;
+}
+
+.ketresult {
+  color: #096756;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Black Han Sans', cursive;
+}
+
+.result {
+  color: #096756;
+  font-family: 'Monoton', cursive;
+  font-size: 200px;
+  font-weight: normal;
+}
+
+.null {
+  color: #940202;
+  font-family: 'Monoton', cursive;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+
+.blinking{
+    animation:blinkingText 2s infinite;
+}
+
+@keyframes blinkingText{
+    50%{    color: transparent; }
+}
+
+/***********************
+  SHARP BUTTONS
+************************/
+.sharp {
+  border-radius:0;
+}
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #1d8673;
+    color: #ffffff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #096756;
+}
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+
+
+
+
+/* STYLE FOR SQUARE BLOCK*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table td{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Monoton', cursive;
+}
+#chessboard {
+  padding: 0px;
+  margin: auto;
+  border: 2px solid #1d8673;
+}
+
+#chessboard tr td {
+  width: 150px;
+  height: 150px;
+}
+
+#chessboard tr:nth-child(2n) td:nth-child(2n+1) {
+  background: #1d8673;
+  color: #ffffff;
+}
+
+#chessboard tr:nth-child(2n+1) td:nth-child(2n) {
+  background: #1d8673;
+  color: #ffffff;
+}
+#chessboard tr:nth-child(2n+1) td:nth-child(2n+1) {
+  background: #ffffff;
+  color: #1d8673;
+}
+
+#chessboard tr:nth-child(2n) td:nth-child(2n) {
+  background: #ffffff;
+  color: #1d8673;
+}
+
+/*END OF STYLE SQUARE BLOCK*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { ... }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }

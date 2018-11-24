@@ -57,33 +57,6 @@ function confirmClick(n){
   }
 }
 
-// $('#userName').on('keydown', function (e) {
-//     if (e.keyCode == 13) {
-//         e.preventDefault()
-//         var nama = $(this).val()
-//         if (nama !== '') {
-//           userName = nama;
-//           $('#namebox').addClass('d-none')
-//           $('#listbox').removeClass('d-none')
-//         }
-//         else {
-//           $('#null-user').removeClass('d-none')
-//         }
-//     }
-// })
-//
-// function submitUser() {
-//     var nama = $('#userName').val()
-//     if (nama !== '') {
-//       userName = nama;
-//       $('#namebox').addClass('d-none')
-//       $('#listbox').removeClass('d-none')
-//     }
-//     else {
-//       $('#null-user').removeClass('d-none')
-//     }
-// }
-
 $('#userName').on('keydown', function (e) {
     if (e.keyCode == 13) {
         e.preventDefault()

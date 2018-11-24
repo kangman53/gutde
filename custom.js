@@ -56,29 +56,63 @@ function confirmClick(n){
     }
   }
 }
+
+// $('#userName').on('keydown', function (e) {
+//     if (e.keyCode == 13) {
+//         e.preventDefault()
+//         var nama = $(this).val()
+//         if (nama !== '') {
+//           userName = nama;
+//           $('#namebox').addClass('d-none')
+//           $('#listbox').removeClass('d-none')
+//         }
+//         else {
+//           $('#null-user').removeClass('d-none')
+//         }
+//     }
+// })
+//
+// function submitUser() {
+//     var nama = $('#userName').val()
+//     if (nama !== '') {
+//       userName = nama;
+//       $('#namebox').addClass('d-none')
+//       $('#listbox').removeClass('d-none')
+//     }
+//     else {
+//       $('#null-user').removeClass('d-none')
+//     }
+// }
+
 $('#userName').on('keydown', function (e) {
     if (e.keyCode == 13) {
         e.preventDefault()
         var nama = $(this).val()
-        if (nama !== '') {
+        if (!nama) {
+        document.getElementById('null-user').innerHTML = "Isikan Namamu";
+          $('#null-user').removeClass('d-none')
+        } else if(nama.length < 3){
+          document.getElementById('null-user').innerHTML = "Isikan Nama Minimal 3 Karakter";
+          $('#null-user').removeClass('d-none')
+        } else {
           userName = nama;
           $('#namebox').addClass('d-none')
           $('#listbox').removeClass('d-none')
-        }
-        else {
-          $('#null-user').removeClass('d-none')
         }
     }
 })
 
 function submitUser() {
     var nama = $('#userName').val()
-    if (nama !== '') {
+    if (!nama) {
+      document.getElementById('null-user').innerHTML = "Isikan Namamu";
+      $('#null-user').removeClass('d-none')
+    } else if(nama.length < 3){
+      document.getElementById('null-user').innerHTML = "Isikan Nama Minimal 3 Karakter";
+      $('#null-user').removeClass('d-none')
+    } else {
       userName = nama;
       $('#namebox').addClass('d-none')
       $('#listbox').removeClass('d-none')
-    }
-    else {
-      $('#null-user').removeClass('d-none')
     }
 }

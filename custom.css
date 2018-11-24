@@ -58,6 +58,10 @@ html {
   color: #096756;
 }
 
+.null-user{
+  color: #940202 !important;
+}
+
 .confirmation{
   text-align: center;
   margin: auto;

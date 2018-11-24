@@ -66,7 +66,7 @@ $('#userName').on('keydown', function (e) {
           $('#listbox').removeClass('d-none')
         }
         else {
-            alert('you must fill name')
+          $('#null-user').removeClass('d-none')
         }
     }
 })
@@ -79,6 +79,6 @@ function submitUser() {
       $('#listbox').removeClass('d-none')
     }
     else {
-        alert('you must fill name')
+      $('#null-user').removeClass('d-none')
     }
 }
